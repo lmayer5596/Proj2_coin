@@ -8,6 +8,7 @@ train <- train[, c('row_sum', 'result')]
 
 test$row_sum <- rowSums(test[, !c('id')])
 test <- test[, c('row_sum')]
+test$result <- 0
 
 submit$result <- 0
 

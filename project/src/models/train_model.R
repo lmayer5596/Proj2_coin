@@ -1,8 +1,3 @@
-library(caret)
-library(data.table)
-library(Metrics)
-
-
 test <- fread('./project/volume/data/interim/test.csv')
 train <- fread('./project/volume/data/interim/train.csv')
 submit <- fread('./project/volume/data/interim/format.csv')
@@ -26,4 +21,4 @@ test$result <- predict(glm_model, newdata = test, type = 'response')
 
 submit$result <- test$result
 
-fwrite(submit, './project/volume/data/processed/submit_2.csv')
+fwrite(submit, './project/volume/data/processed/submit_3.csv')
