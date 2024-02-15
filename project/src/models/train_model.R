@@ -26,4 +26,4 @@ test$result <- predict(glm_model, newdata = test, type = 'response')
 
 submit$result <- test$result
 
-fwrite(submit, './project/volume/data/processed/submit_1.csv')
+fwrite(submit, './project/volume/data/processed/submit_2.csv')
